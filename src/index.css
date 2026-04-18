@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: white;
+}
+
+/* Main layout */
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/* LEFT PANEL */
+.left {
+  flex: 3;
+  padding: 30px;
+}
+
+/* RIGHT PANEL (palette) */
+.right {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-left: 1px solid rgba(255,255,255,0.1);
+}
+
+/* QUESTION TEXT */
+h2 {
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 18px;
+}
+
+/* OPTION BUTTONS */
+.button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  background: #1e293b;
+  color: white;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background: #334155;
+}
+
+.selected {
+  background: #3b82f6;
+}
+
+/* NAV BUTTONS */
+.nav-btn {
+  margin-top: 20px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background: #475569;
+  color: white;
+}
+
+.nav-btn:hover {
+  background: #64748b;
+}
+
+/* PALETTE */
+.palette-btn {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+/* STATES */
+.answered {
+  background: #22c55e;
+}
+
+.review {
+  background: #f59e0b;
+}
+
+.palette-btn.review.answered {
+  background: #a855f7;
+}
+
+/* RESULT CARD */
+.result-card {
+  margin-top: 30px;
+  padding: 25px;
+  border-radius: 15px;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+  text-align: center;
+}
+
+/* PROGRESS BAR */
+.progress-bar {
+  width: 100%;
+  background: #1e293b;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.progress-fill {
+  background: #22c55e;
+  padding: 8px;
+  text-align: center;
+}
